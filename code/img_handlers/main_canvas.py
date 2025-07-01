@@ -51,9 +51,9 @@ class MainCanvas():
         out = Image.blend(img, self.get_canvas().convert("RGBA"), factor)
         return out
     
-    def set_bg_letter(self, font_size=5, gamma=1):
+    def set_bg_letter(self, path, font_size=5, gamma=1):
         w, h = self.img.size
-        self.bg_letter = get_bg_letter(w, h, self, font_size, gamma)
+        self.bg_letter = get_bg_letter(path, w, h, self, font_size, gamma)
 
     def set_bg_grid(self, rows, cols, density_palette):
         w, h = self.img.size

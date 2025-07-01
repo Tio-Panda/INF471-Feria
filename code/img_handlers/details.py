@@ -2,17 +2,17 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageChops
 from numpy.random import default_rng
 
-def get_bg_letter(N, M, canvas, font_size=5, gamma=1):
+def get_bg_letter(path, N, M, canvas, font_size=5, gamma=1):
     SIZE = (N, M)
 
     FONTS = {
-        0: "../fonts/RobotoMono-Bold.ttf",        # 700
-        1: "../fonts/RobotoMono-SemiBold.ttf",    # 600
-        2: "../fonts/RobotoMono-Medium.ttf",      # 500
-        3: "../fonts/RobotoMono-Regular.ttf",     # 400
-        4: "../fonts/RobotoMono-Light.ttf",       # 300
-        5: "../fonts/RobotoMono-ExtraLight.ttf",  # 200
-        6: "../fonts/RobotoMono-Thin.ttf",        # 100
+        0: f"{path}/RobotoMono-Bold.ttf",        # 700
+        1: f"{path}/RobotoMono-SemiBold.ttf",    # 600
+        2: f"{path}/RobotoMono-Medium.ttf",      # 500
+        3: f"{path}/RobotoMono-Regular.ttf",     # 400
+        4: f"{path}/RobotoMono-Light.ttf",       # 300
+        5: f"{path}/RobotoMono-ExtraLight.ttf",  # 200
+        6: f"{path}/RobotoMono-Thin.ttf",        # 100
     }
 
     LOREM = ("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor "
