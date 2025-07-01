@@ -23,3 +23,5 @@ https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_tiny.pt
 # Uso
 
 Ejecutar las celdas del jupyter notebook
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/https://github.com/Tio-Panda/INF471-Feria/blob/main/code/playground.ipynb)
