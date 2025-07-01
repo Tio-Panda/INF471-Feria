@@ -41,8 +41,8 @@ class MainCanvas():
 
     def get_masked_letter_img(self, mask):
         img = self.bg_letter
-        layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
-        layer.paste(img, (0,0))
+        layer = Image.new("RGBA", img.size, (255, 255, 255, 255))
+        layer = Image.alpha_composite(layer, img)
         layer.putalpha(Image.fromarray(mask))
 
         return layer
